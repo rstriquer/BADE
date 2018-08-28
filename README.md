@@ -93,10 +93,13 @@ var users = {
       // area para agregar quando estivermos utilizando algum plugin em conjunto com o campo
       // plugins nesta versão só é disponibilizado com campos do tipo input
       'plugin': {
-        // indica qual o plugin sendo utilizado
-        //   fst) Campo do tipo seleção múltipla fazendo uso do plugin fastselect - https://dbrekalo.github.io/fastselect/
-        'name':'fst',
-        // indica as caracteristicas de configuração do plugin, cada um tem a sua característica
+        // Indica qual o plugin sendo utilizado.
+	// Obrigatório caso haja demanda de uso de plugins
+        //   fastselect) Implementa o plugin fastselect - https://dbrekalo.github.io/fastselect/
+	//   inputmask) Implementa o plugin inputmask - https://github.com/RobinHerbots/jquery.inputmask/
+        'name':'fastselect',
+        // É um objeto que indica as caracteristicas de configuração do plugin, cada um tem a sua característica
+	// É obrigatório quando utilizando os plugins: fastselect
         'options': {
           'data-user-option-allowed': 'true',
           'data-url': '/ws/v1/getData',
@@ -104,6 +107,11 @@ var users = {
           'data-initial-value': null,
           // value="new data,separator"
           // data-initial-value='[{"text": "new data", "value" : "new data"}, {"text": "separator", "value" : "separator"}]'
+	},
+	// É um array que indica os parâmetros que serão repassados ao plugin
+	// Obrigatório para os plugins: inputmask
+	// Para maiores exemplos veja o item "Plugins no wiki do github deste projeto"
+	'params': [["(99) 9999-9999", "(99) 999.999.999"]]
       }
       // field icon. a estrutura do icon é ignorada em campos do tipo "select"
       'icon': {
@@ -132,10 +140,6 @@ var users = {
       // função para validação do field
       // a função a ser utilizada pode apresentar mensagens por meio da funcioalidade confirm ou alert, mas sempre deve retornar apenas verdadeiro ou falso.
       'validation': null,
-      // if field has mask.
-      // - ao utilizar a opção mask a opção placeholder deixa de ser funcional
-      // - Mask sample to multiple format options ... 'mask': ["(99) 9999-9999", "(99) 999.999.999"],
-      'mask': null,
       // texto que será apresentado logo abaixo do campo como um help inline do mesmo.
       'comment': null,
       // vazio se for um campo não obrigatório ou a mensagem a ser apresentada ao usuário caso seja um campo obrigatório
