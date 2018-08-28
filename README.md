@@ -57,7 +57,9 @@ jQuery.fn.CreateDataTableLite(users);
 
 ## Parameters
 
-Bellow a more whide documentation about the parameters list you can use
+For a better understanding of the project please visit the [Projct Wiki in github]{https://github.com/rstriquer/BADE).
+Bellow a simple reference to easy the day-to-day use.
+
 ```javascript
 var users = {
   // A forms title line to use whenever its an add action
