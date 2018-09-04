@@ -68,6 +68,8 @@ var users = {
   'title_old': 'Updating an existent line!',
   // the table's id to bind the form to
   'table_id': 'dt_emails',
+  // defines if user can edit the line or only see it
+  'can_edit': false,
   // fields configurations
   'fields': [
     {
