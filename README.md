@@ -9,6 +9,7 @@ with eny template, specialy if you use font-awesome icon set.
 
 Just go! Its easy as clone the directory in your repo and start working.
 
+For a better understanding of the project please visit the [Projct Wiki in github]{https://github.com/rstriquer/BADE/wiki).
 
 ## Licensing
 
