@@ -57,7 +57,7 @@ jQuery.fn.CreateDataTableLite(users);
 
 ## Parameters
 
-For a better understanding of the project please visit the [Projct Wiki in github](https://github.com/rstriquer/BADE).
+For a better understanding of the project please visit the [Projct Wiki in github](https://github.com/rstriquer/BADE/wiki).
 Bellow a simple reference to easy the day-to-day use.
 
 ```javascript
