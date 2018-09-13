@@ -1,9 +1,13 @@
 # BADE (to bid your data!)
 
 Its an easy and lite jQuery JavaScript plugin to use within 
-(Twitters) Bootstrap AdminLTE DataTable Editor. Its made to use
-within AdminLTE Bootstrap template, but it should be instant ready
-with eny template, specialy if you use font-awesome icon set.
+(Twitters) Bootstrap AdminLTE DataTable Editor.
+
+BADE was created to maximize client side processing/memory 
+consumption therefore minimizing server side counter parts
+and is made to use within AdminLTE Bootstrap template,
+but it should be instant ready with eny template, specialy if
+you use font-awesome icon set, Bootstrap and DataTable.
 
 ## Getting Started
 
